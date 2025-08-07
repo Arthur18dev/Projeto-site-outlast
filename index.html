@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlast | Sobreviva ao terror</title>
+
+    <!-- Meu css -->
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="" href="src/css/reset.css">
+</head>
+
+<body class="dark-theme" aria-label="O site está utilizando o tema light" role="body">
+
+    <header>
+
+        <div class="header-content">
+            <img class="invert-element" src="src/images/banner/logo-outlast.png"
+                alt="Imagem principal Outlast. Semana Frontend DIO.">
+            <p class="invert-element" role="text">Você está prestes a entrar no terror. Sobreviva e descubra o que está
+                acontecendo aqui...</p>
+            <button id="switch-theme-button" onclick="switchTheme()">Entrar</button>
+        </div>
+
+        <div id="top-characters" class="world-characters"></div>
+    </header>
+
+    <main>
+        <div id="bottom-characters" class="world-characters"></div>
+
+        <audio id="music" controls>
+            <source src="src/audio/outlast_soundtrack_01.mp3" type="audio/mp3" />
+        </audio>
+
+        <section id="section-inverted-world" class="container">
+            <div class="section-texts">
+
+                <h2>Sinopse</h2>
+                <p role="text">
+                    Outlast coloca você na pele de Miles Upshur, um jornalista investigativo que decide explorar o
+                    asilo de Mount Massive, um manicômio isolado no meio das montanhas. Quando chega, você descobre
+                    que coisas horríveis acontecem lá. Ao longo do jogo, você deve sobreviver a encontros com psicopatas
+                    e outros horrores, enquanto tenta descobrir o que realmente aconteceu no local.
+                    Prepare-se para momentos de tensão extrema, já que você estará desarmado, dependendo apenas de sua
+                    inteligência e habilidades para escapar dos perigos que rondam as sombras.
+                </p>
+
+            </div>
+
+            <img class="invert-element" src="src/images/content/outlast-capa.jpeg"
+                alt="Image ilustrativa do Mundo Invertido" />
+        </section>
+
+        <section id="section-outlast-trailer" class="container">
+            <div class="video-frame" aria-hidden="true">
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/uKA-IA4locM?si=zWw-Oypos5CpnVoH"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="section-texts">
+                <h2>Sobreviva</h2>
+                <p role="text">
+                    O jogo se passa em um ambiente escuro e claustrofóbico, com corredores apertados, salas abandonadas
+                    e uma atmosfera opressiva que mantém você tenso o tempo todo. Sem armas para se defender, a única
+                    opção é correr, se esconder ou usar sua inteligência para escapar dos perigos que te cercam. A
+                    tensão nunca cessa, e a sensação de estar sendo observado está sempre presente.
+                </p>
+            </div>
+        </section>
+
+        <section id="section-outlast-gallery">
+            <div class="container section-text">
+                <h2>O Jogo mais popular de terror</h2>
+                <ul class="gallery-container" role="gallery">
+                    <li class="gallery-image invert-element">
+                        <img src="src/images/content/outlast-chris-walker.webp" alt="Imagem de Vecna" />
+                    </li>
+                    <li class="gallery-image invert-element">
+                        <img src="src/images/content/outlast-doctor.jpg"
+                            alt="Imagem ilustrativa dos amigos de Eleven" />
+                    </li>
+                    <li class="gallery-image invert-element">
+                        <img src="src/images/content/outlast-irmaos.JPG" alt="Imagem Eleven assustada" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section-form" class="container">
+            <h2>Baixe agora o Game</h2>
+            <p>
+                Para deter eles, o jornalista investigativo também precisam de você. O Jogos mais famoso está de graça e
+                esperando você
+                para sentir o Horror. Se você é destemido, gosta de desafios e
+                não tem medo, chegou a hora de se inscrever para reber o jogo.
+            </p>
+
+            <div class="form-content">
+                <h3>Se inscreva e tenha experiências de <span>outro mundo<span></span></h3>
+
+                <div class="form-container">
+                    <form>
+                        <label for="txtName">Nome Completo</label>
+                        <input type="text" name="name" id="txtName">
+
+                        <label for="txtEmail">E-mail</label>
+                        <input type="email" name="email" id="txtEmail">
+
+                        <label for="txtLevel">Level</label>
+                        <input type="text" name="level" id="txtLevel">
+
+                        <label for="txtCharacter">Personagem</label>
+                        <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
+
+                        <button type="button" id="btnSubscribe">Me inscrever</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Projeto construído para fins didáticos, com o objetivo de colocar em
+            prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._
+        </p>
+        <img src="src/images/footer/logo.svg" alt="Logotipo DIO">
+    </footer>
+
+    <!-- Meu javascript -->
+    <script src="src/js/engine.js"></script>
+</body>
+
+</html>
